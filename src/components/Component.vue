@@ -1,21 +1,17 @@
 <template>
-  <div id="app">
+  <div>
 
   </div>
 </template>
 
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-    //
-  }
+  name: '',
 }
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 
 </style>
