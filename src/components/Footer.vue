@@ -92,6 +92,7 @@ export default {
   background-color: black;
   overflow: hidden;
   background-image: url("../assets/img/footer-bg.jpg");
+  background-size: cover;
 
   .container {
     display: flex;
