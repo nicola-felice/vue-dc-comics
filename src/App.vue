@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    
     <Header/>
 
     <main>
@@ -9,45 +10,11 @@
         </div>
       </div>
 
-      <div class="buy_comics_banner">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-                <span>DIGITAL COMICS</span>              
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-                <span>DIGITAL COMICS</span>              
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-                <span>DIGITAL COMICS</span>              
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-                <span>DIGITAL COMICS</span>              
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-                <span>DIGITAL COMICS</span>              
-              </a>
-            </li>
-          </ul>          
-        </div>
-      </div>
+      <BuyComicsBanner/>
     </main>
 
     <Footer/>
+
   </div>
 </template>
 
@@ -55,12 +22,14 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import BuyComicsBanner from "@/components/BuyComicsBanner.vue";
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
+    BuyComicsBanner
   }
 }
 </script>
@@ -75,28 +44,5 @@ export default {
   padding: 3rem;
   color: white;
   font-size: 2rem;
-}
-
-.buy_comics_banner {
-  background-color: $main_color;
-
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-
-    li a {
-      display: flex;
-      align-items: center;
-      color: white;
-      text-decoration: none;
-      margin: 3rem 0;
-
-      img {
-        width: 40px;
-        margin-right: .75rem;
-      }
-    }
-  }
 }
 </style>
