@@ -8,12 +8,7 @@
 
       <nav class="header_nav">
         <ul>
-          <li><a href="#">comics</a></li>
-          <li><a class="active" href="#">comics</a></li>
-          <li><a href="#">comics</a></li>
-          <li><a href="#">comics</a></li>
-          <li><a href="#">comics</a></li>
-          <li><a href="#">comics</a></li>
+          <li v-for="(elm, index) in menu" :key="index"><a :class="{ 'active' : elm.isActive }" :href="elm.link">{{elm.name}}</a></li>
         </ul>
       </nav>      
     </div>
@@ -25,6 +20,62 @@
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      menu: [
+        {
+          link: '#',
+          name: 'characters',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'comics',
+          isActive: true,
+        },
+        {
+          link: '#',
+          name: 'movies',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'TV',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'games',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'collectibles',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'videos',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'fans',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'news',
+          isActive: false,
+        },
+        {
+          link: '#',
+          name: 'shop',
+          isActive: false,
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -50,15 +101,18 @@ export default {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 2.5rem 0;
-    margin-left: 2rem;
+    padding: 2.5rem .85rem;
     text-transform: uppercase;
+    letter-spacing: .45px;
     font-weight: bold;
-    letter-spacing: .35px;
 
     &.active {
       border-bottom: 5px $main_color solid;
       color: $main_color;
+    }
+
+    &:hover {
+      border-bottom: 5px $main_color solid;
     }
   }
 }  
