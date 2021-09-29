@@ -53,9 +53,12 @@ export default {
     padding: 2.5rem 0;
     margin: 0 1rem;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .35px;
 
     &.active {
       border-bottom: 5px $main_color solid;
+      color: $main_color;
     }
   }
 }  
