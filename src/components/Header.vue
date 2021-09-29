@@ -3,7 +3,7 @@
   <header>
     <div class="container">
       <div class="logo_wrapper">
-        <img class="logo" src="../assets/img/dc-logo.png" alt="DC logo">
+        <a href="#"><img class="logo" src="../assets/img/dc-logo.png" alt="DC logo"></a>
       </div>
 
       <nav class="header_nav">

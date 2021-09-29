@@ -108,7 +108,7 @@ export default {
     ul {
       list-style: none;
       padding: .5rem 0;
-      margin-right: .5rem;
+      margin-right: 1rem;
 
       h3 {
         margin-bottom: .35rem;
@@ -125,6 +125,9 @@ export default {
       color: #959595;
       text-decoration: none;
       
+      &:hover {
+        color: white;
+      }
     }
   }
 
