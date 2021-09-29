@@ -50,7 +50,7 @@ export default {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 2.2rem 0;
+    padding: 2.5rem 0;
     margin: 0 1rem;
     text-transform: uppercase;
 
