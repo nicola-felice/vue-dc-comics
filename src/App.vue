@@ -13,24 +13,34 @@
         <div class="container">
           <ul>
             <li>
-              <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-              <span>DIGITAL COMICS</span>
+              <a href="#">
+                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
+                <span>DIGITAL COMICS</span>              
+              </a>
             </li>
             <li>
-              <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-              <span>DIGITAL COMICS</span>
+              <a href="#">
+                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
+                <span>DIGITAL COMICS</span>              
+              </a>
             </li>
             <li>
-              <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-              <span>DIGITAL COMICS</span>
+              <a href="#">
+                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
+                <span>DIGITAL COMICS</span>              
+              </a>
             </li>
             <li>
-              <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-              <span>DIGITAL COMICS</span>
+              <a href="#">
+                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
+                <span>DIGITAL COMICS</span>              
+              </a>
             </li>
             <li>
-              <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
-              <span>DIGITAL COMICS</span>
+              <a href="#">
+                <img src="./assets/img/buy-comics-digital-comics.png" alt="icon">
+                <span>DIGITAL COMICS</span>              
+              </a>
             </li>
           </ul>          
         </div>
@@ -75,11 +85,12 @@ export default {
     display: flex;
     justify-content: space-around;
 
-    li {
+    li a {
       display: flex;
       align-items: center;
       color: white;
-      padding: 3rem 0;
+      text-decoration: none;
+      margin: 3rem 0;
 
       img {
         width: 40px;

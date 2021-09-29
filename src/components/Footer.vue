@@ -57,7 +57,22 @@
       </div>
     </div>
 
-    <div class="footer_bottom"></div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="btn_wrapper">
+          <button class="sign_up_btn">SIGN-UP NOW!</button>
+        </div>
+
+        <div class="socials_wrapper">
+          <a class="follow_us" href="#">FOLLOW US</a>
+          <a href="#"><img src="../assets/img/footer-facebook.png" alt="icon social"></a>
+          <a href="#"><img src="../assets/img/footer-twitter.png" alt="icon social"></a>
+          <a href="#"><img src="../assets/img/footer-youtube.png" alt="icon social"></a>
+          <a href="#"><img src="../assets/img/footer-pinterest.png" alt="icon social"></a>
+          <a href="#"><img src="../assets/img/footer-periscope.png" alt="icon social"></a>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </template>
@@ -71,6 +86,7 @@ export default {
 
 
 <style scoped lang="scss">
+@import "@/assets/variables.scss";
 
 .footer_top {
   background-color: black;
@@ -91,7 +107,7 @@ export default {
 
     ul {
       list-style: none;
-      padding: .5rem;
+      padding: .5rem 0;
       margin-right: .5rem;
 
       h3 {
@@ -118,6 +134,47 @@ export default {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+
+.footer_bottom {
+  background-color: #303030;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+  }
+
+  .sign_up_btn {
+    background-color: transparent;
+    border: 2px $main_color solid;
+    color: white;
+    padding: .6rem .7rem;
+    cursor: pointer;
+  }
+
+  .socials_wrapper {
+    display: flex;
+    align-items: center;
+
+    > * {
+      padding-left: 1rem;
+    }
+
+    img {
+      width: 27px;
+    }
+
+    .follow_us {
+      color: $main_color;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
   }
 }
 </style>

@@ -51,7 +51,7 @@ export default {
     text-decoration: none;
     display: block;
     padding: 2.5rem 0;
-    margin: 0 1rem;
+    margin-left: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .35px;
