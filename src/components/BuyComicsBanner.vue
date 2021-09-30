@@ -1,5 +1,5 @@
 <template>
-  <div class="buy_comics_banner">
+  <section class="buy_comics_banner">
     <div class="container">
       <ul>
         <li v-for="(elm, index) in links" :key="index">
@@ -10,7 +10,7 @@
         </li>
       </ul>          
     </div>
-  </div>
+  </section>
 </template>
 
 
