@@ -86,7 +86,7 @@ export default {
 
 
 <style scoped lang="scss">
-@import "@/assets/variables.scss";
+@import "../assets/variables.scss";
 
 .footer_top {
   background-color: black;

@@ -1,10 +1,10 @@
 <template>
   <li class="product">
     <a href="#">
-    <div class="image_wrapper">
-      <img :src="productData.thumb" alt="productData.type">
-    </div>
-    <span>{{productData.series}}</span>
+      <div class="image_wrapper">
+        <img :src="productData.thumb" alt="productData.type">
+      </div>
+      <span>{{productData.series}}</span>
     </a>
   </li>
 </template>
