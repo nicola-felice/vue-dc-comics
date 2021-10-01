@@ -1,4 +1,5 @@
 <template>
+
   <section class="buy_comics_banner">
     <div class="container">
       <ul>
@@ -11,6 +12,7 @@
       </ul>          
     </div>
   </section>
+  
 </template>
 
 

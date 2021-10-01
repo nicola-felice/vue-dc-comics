@@ -1,4 +1,5 @@
 <template>
+
   <li class="product">
     <a href="#">
       <div class="image_wrapper">
@@ -7,6 +8,7 @@
       <span>{{productData.series}}</span>
     </a>
   </li>
+  
 </template>
 
 
